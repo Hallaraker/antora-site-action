@@ -1,6 +1,6 @@
 = Antora Site GitHub Action
 
-GitHub action that can be used to generate the https://antora.org/[Antora] site using Antora 3.0.1.
+GitHub action that can be used to generate the https://antora.org/[Antora] site using Antora 3.0.3.
 
 It supports as opt-in the https://gitlab.com/antora/antora-lunr-extension[Lunr] index generator extension for documentation search.
 
@@ -17,7 +17,7 @@ The action accepts the following parameters:
 [source,yaml]
 ----
 name: "Generate site using antora site action"
-uses: bfranske/antora-site-action@master
+uses: hallaraker/antora-site-action@master
 with:
     antora_playbook: antora-playbook.yml
     # optional path within the repo, defaults to ${{github.workspace}}
@@ -29,7 +29,7 @@ with:
 [source,yaml]
 ----
 name: "Generate site and Lunr doc search index using antora site action"
-uses: bfranske/antora-site-action@master
+uses: hallaraker/antora-site-action@master
 with:
     antora_playbook: antora-playbook.yml
     # optional path within the repo, defaults to ${{github.workspace}}
